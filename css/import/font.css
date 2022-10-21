@@ -1,0 +1,82 @@
+/* ======================================================== */
+/* font : NotoSansKR */
+/* ======================================================== */
+@font-face {
+  font-family: "NotoSansKR-100";
+  src: url("/css/fonts/NotoSansKR-Thin.otf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "NotoSansKR-300";
+  src: url("/css/fonts/NotoSansKR-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NotoSansKR-400";
+  src: url("/css/fonts/NotoSansKR-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSansKR-500";
+  src: url("/css/fonts/NotoSansKR-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "NotoSansKR-700";
+  src: url("/css/fonts/NotoSansKR-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSansKR-900";
+  src: url("/css/fonts/NotoSansKR-Black.otf");
+  font-weight: 900;
+}
+
+/* ======================================================== */
+/* font defualt(400) */
+/* ======================================================== */
+body {
+  font-family: "NotoSansKR-400"; 
+  font-size: 16px; 
+  line-height: 1.4; 
+  color: #333;
+}
+
+/* ======================================================== */
+/* title */
+/* ======================================================== */
+h1, .h1 {
+  font-size: 40px;
+  font-family: "NotoSansKR-700"; 
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-family: "NotoSansKR-700"; 
+}
+
+h3, .h3 {
+  font-size: 24px;
+  font-family: "NotoSansKR-700"; 
+}
+
+h4, .h4 {
+  font-size: 20px;
+  font-family: "NotoSansKR-700"; 
+}
+
+h5, .h5 {
+  font-size: 18px;
+  font-family: "NotoSansKR-700"; 
+}
+
+h6, .h6 {
+  font-size: 16px;
+  font-family: "NotoSansKR-700"; 
+}
+
+
+img {
+  /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
+  display: block;
+}
