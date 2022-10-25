@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>푸터 공통</title>
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KOSMO" />
+  <meta property="og:title" content="스마트제조혁신추진단" />
+  <meta property="og:description" content="스마트혁신제조추진단 스마트공장 사업관리시스템" />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
+  <meta property="og:url" content="https://smalt-factory.kr/" />
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-stalted-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="KOSMO" />
+  <meta property="twitter:title" content="스마트제조혁신단" />
+  <meta property="twitter:description" content="스마트제조혁신추진단 스마트공장 사업관리시스템" />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+  <meta property="twitter:url" content="https://smalt-factory.kr/" />
+  <!--favicon-->
+  <link rel="icon" href="./favicon.png" />
+  <!-- css -->
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+</head>
+<body>
+  
+  <div class="footer-slide">
+    <div class="inner">
+      <!-- footer slide -->
+      <div class="swiper-head">          
+        <div class="swiper visual-slide" id="footerSlide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 4.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 3.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 2.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 1.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 4.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 3.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 2.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="/image/banner_logo 1.png" /></a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>    <!-- footer-slide end -->
+  
+  <!-- footer term -->
+  <div class="footer-term">
+    <ul>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">이용안내</a></li>
+      <li><a href="#">이메일무단수집거부</a></li>
+      <li><a href="#">중소기업통합콜센터 : 1357</a></li>
+    </ul>
+  </div>  <!-- footer-term end -->
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="inner">
+      <a href="#"><img src="./image/logo.png" alt="KOSMO"></a>
+      <div class="address">[중소기업기술정보진흥원 부설 스마트제조혁신추진단] 
+        (30141) 세종특별자치시 집현중앙로 79, 스마트제조혁신추진단<br>Copyright
+        ⓒKOSMO All Rights Reserved.
+      </div>
+    </div>
+  </div>  <!-- footer end -->
+
+
+</body>
+<script>
+  //footer-slide
+  var swiper = new Swiper("#footerSlide", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1129: {slidesPerView: 4},
+      920: {slidesPerView: 3},
+      850: {slidesPerView: 3},
+      610: {slidesPerView: 2},
+      10: {slidesPerView: 1}
+    },
+  });
+</script>
+</html>
