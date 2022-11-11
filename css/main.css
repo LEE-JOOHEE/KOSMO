@@ -374,6 +374,18 @@
   top: 0;
   z-index: -1;
 }
+.bg-image-color{
+  background-image: url('/image/bg_b_05.png');
+  width: 100%;
+  height: 907px;
+  background-repeat: no-repeat;
+  background-color: #aaa;
+  background-size: cover;
+  background-position: 0% 50%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
 .bg-image-ai{
   /* background-image: url('/image/bg_b_04.jpg'); */
   background-image: url('/image/bg_a.jpg');
