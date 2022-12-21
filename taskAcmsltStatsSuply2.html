@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>맞춤형 공급기업검색</title>
+  <!--favicon-->
+  <link rel="icon" href="./favicon.png" />
+  <!-- css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- fontawesome.com -->
+  <script src="https://kit.fontawesome.com/485091a38d.js" crossorigin="anonymous"></script>
+</head>
+<body style="background: #fff;">
+
+  <div class="wrap">
+
+    <div class="header">
+      <div class="inner">
+        <div class="sub-menu">
+          <ul class="menu">
+            <li><a href="javascript:void(0)">로그인</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0)">회원가입</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0)">중소벤처24 통합로그인</a></li>
+          </ul>
+          <ul class="icon_box">
+            <li>
+              <a href="https://www.youtube.com/channel/UCq1x4w82UdQM4ZuaiihP62w" target="_blank" alt="KOSMO스마트제조혁신추진단 유튜브">
+                <img src="/image/youtube_icon 1.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/KOREA.SMART.MANUFACTURING.OFFICE" target="_blank" alt="스마트제조혁신추진단 페이스북">
+                <img src="/image/facebook_icon 1.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.naver.com/kosmo_pr" target="_blank" alt="스마트공장 블로그">
+                <img src="./image/band_icon 1.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kosmo_smartfactory/" target="_blank" alt="스마트공장 인스타그램">
+                <img src="./image/insta_icon 1.png">
+              </a>
+            </li>
+          </ul>
+          <!-- mobile menu button -->
+          <button type="button" class="mobile-icon"></button>
+        </div>
+        <!-- mobile-nav menu -->
+        <!-- <div class="mobile-menu">
+          <ul class="menu">
+            <li class="menu-item"><a href="#">사업</a></li>
+            <li class="menu-item"><a href="#">알림</a></li>
+            <li class="menu-item"><a href="#">홍보</a></li>
+            <li class="menu-item"><a href="#">사업</a></li>
+            <li class="menu-item"><a href="#">소개</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="inner">
+        <!-- KOSMO 로고 -->
+        <a href="/index-bg-factory.html" class="logo"><img src="/image/logo-text.png" alt="KOSMOlogo" /></a>
+        
+        <div class="nav-bar" role="navigation">
+          <ul class="access-menu">
+            <li>
+              <a href="#">사업</a>
+              <ul class="access-submenu">
+                <li><a href="#">사업공고</a></li>
+                <li><a href="#">지원사업 소개</a></li>
+                <li><a href="#">담당자 연락처</a></li>
+                <li><a href="#">공급기업 소개</a></li>
+                <li><a href="/taskAcmsltStatsSuply2.html">맞춤형공급 기업검색</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">알림</a>
+              <ul class="access-submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자료실</a></li>
+                <li><a href="#">정기 간행물</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">홍보</a>
+              <ul class="access-submenu">
+                <li><a href="#">스마트공장 소개</a></li>
+                <li><a href="#">유관사업 안내</a></li>
+                <li><a href="#">우수구축 사례</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">홍보자료</a></li>
+                <li><a href="#">시범공장 조회</a></li>
+                <li><a href="#">견학공지</a></li>
+                <li><a href="#">견학신청</a></li>
+                <li><a href="#">제조혁신센터</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업</a>
+              <ul class="access-submenu">
+                <li><a href="#">과제신청</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">소개</a>
+              <ul class="access-submenu">
+                <li><a href="#">기관장 인사말</a></li>
+                <li><a href="#">스마트제조혁신단 소개</a></li>
+                <li><a href="#">비전 및 목표</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">CI소개</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div>
+      </div>
+    </div>    <!-- nav end -->
+
+    <div class="visual pb-64">
+      <div class="inner-task">
+        <!-- <h3 class="col-span-12">맞춤형 공급기업검색</h3> -->
+        <!-- <hr class="col-span-12 mtb-24" /> -->
+        <div class="task-acc-wrap">
+          <button class="accordion">솔루션
+            <strong>2</strong><sapn class="mlr-8">/</sapn><span>11</span>
+          </button>
+          <div class="panel">
+            <div class="panel-cont">
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="1" id="check-1" checked />
+                <label for="check-1">MES</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="2" id="check-2" />
+                <label for="check-2">ERP</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="3" id="check-3" />
+                <label for="check-3">빅데이터</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="4" id="check-4" />
+                <label for="check-4">SCM</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="5" id="check-5" />
+                <label for="check-5">PLM</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="6" id="check-6" checked />
+                <label for="check-6">AI</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="7" id="check-7" />
+                <label for="check-7">로봇</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="8" id="check-8" />
+                <label for="check-8">센서</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="9" id="check-9" />
+                <label for="check-9">FEMS</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="10" id="check-10" />
+                <label for="check-10">자동화</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group1" class="group1" value="11" id="check-11" />
+                <label for="check-11">클라우드</label>
+              </div>
+            </div>
+          </div>
+          <button class="accordion">지역
+            <strong>5</strong><sapn class="mlr-8">/</sapn><span>18</span>
+          </button>
+          <div class="panel">
+            <div class="panel-cont">
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="50" id="check-50" />
+                <label for="check-50">서울</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="51" id="check-51" />
+                <label for="check-51">인천</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="52" id="check-52" />
+                <label for="check-52">부산</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="53" id="check-53" />
+                <label for="check-53">대전</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="54" id="check-54" />
+                <label for="check-54">대구</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="55" id="check-55" />
+                <label for="check-55">광주</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="56" id="check-56" />
+                <label for="check-56">울산</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="57" id="check-57" />
+                <label for="check-57">포항</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="58" id="check-58" checked />
+                <label for="check-58">세종</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="59" id="check-59" />
+                <label for="check-59">경기</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="60" id="check-60" />
+                <label for="check-60">경기북부</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="61" id="check-61" />
+                <label for="check-61">경남</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="62" id="check-62" />
+                <label for="check-62">경북</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="63" id="check-63" />
+                <label for="check-63">충남</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="64" id="check-64" />
+                <label for="check-64">충북</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="65" id="check-65" />
+                <label for="check-65">전남</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="66" id="check-66" />
+                <label for="check-66">전북</label>
+              </div>
+              <div class="check-box-type">
+                <input type="checkbox" name="group2" class="group2" value="67" id="check-67" />
+                <label for="check-67">강원</label>
+              </div>
+            </div>
+          </div>
+          <button class="accordion">업종(전문/특화)
+            <strong>0</strong><sapn class="mlr-8">/</sapn><span>25</span>
+          </button>
+          <div class="panel">
+            <div class="panel-cont">
+              <p>업종(전문/특화) 들어갈 내용<br/>업종(전문/특화) 들어갈 내용<br/>업종(전문/특화) 들어갈 내용<br/>업종(전문/특화) 들어갈 내용</p>
+            </div>
+          </div>
+          <button class="accordion">사업유형
+            <strong>1</strong><sapn class="mlr-8">/</sapn><span>10</span>
+          </button>
+          <div class="panel">
+            <div class="panel-cont">
+              <p>사업유형 들어갈 내용<br/>사업유형 들어갈 내용<br/>사업유형 들어갈 내용<br/>사업유형 들어갈 내용<br/>사업유형 들어갈 내용</p>
+            </div>
+          </div>
+        </div>      
+        <!-- task-acc-wrap (아코디언 메뉴) end -->
+
+        <div class="task-tag-wrap">   
+          <div class="tag-container">
+            <div class="tags">
+              <button type="button" class="tag">MES</button>
+              <button type="button" class="tag">AI</button>
+              <button type="button" class="tag">세종</button>
+              <button type="button" class="tag">대중소상생형</button>
+              <button type="button" class="tag">MES</button>
+              <button type="button" class="tag">AI</button>
+              <button type="button" class="tag">세종</button>
+              <button type="button" class="tag">대중소상생형</button>
+              <button type="button" class="tag">MES</button>
+              <button type="button" class="tag">AI</button>
+              <button type="button" class="tag">세종</button>
+              <button type="button" class="tag">대중소상생형</button>
+              <button type="button" class="tag">MES</button>
+              <button type="button" class="tag">AI</button>
+              <button type="button" class="tag">세종</button>
+              <button type="button" class="tag">대중소상생형</button>
+              <button type="button" class="tag">MES</button>
+              <button type="button" class="tag">AI</button>
+              <button type="button" class="tag">세종</button>
+              <button type="button" class="tag">대중소상생형</button>
+              <button type="button" class="tag"></button>
+            </div>
+          </div>
+          <div class="task-search mt-12 pl-16">
+            <div class="form-group">
+              <input type="text" class="task-input mt-4 mb-8" placeholder="내용을 입력하세요" value="" />
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn" id="" onclick="">검색</button>
+              <button type="button" class="btn" id="" onclick="">조건 초기화</button>
+            </div>
+          </div>
+        </div>
+        <!-- (왼쪽-Tag검색) task-tag-wrap end -->
+        
+        <div class="task-keyword-wrap">
+          <div class="keyword-container">
+            <div class="keywords">
+              <div class="badge">우수사례</div>
+              <div class="badge">신규구축</div>
+              <div class="badge">기초</div>
+              <div class="badge">고도화</div>
+              <div class="badge">대중소상생형</div>
+              <div class="badge">솔루션</div>
+              <div class="badge"></div>
+            </div>
+          </div>
+          <button type="button" class="btn mb-8 mt-auto" id="" onclick="">키워드 관리</button>
+        </div>
+
+        <div class="list-li-tool col-span-12 _flx mt-24">
+          <p class="list-li-info">총 <strong>1767</strong> 건</p>
+          <div class="list-li-select _flx ml-auto">
+            <div class="wrk-sc-box">
+              <label for="worker-scale">종사자 규모</label>
+              <select name="worker" id="worker-scale">
+                <option value="">전체</option>
+                <option value="">10인미만</option>
+                <option value="">10인이상~30인미만</option>
+                <option value="">30인이상~50인미만</option>
+                <option value="">50인이상~100인미만</option>
+                <option value="">100인이상~200인미만</option>
+                <option value="">200인이상</option>
+              </select>
+            </div>
+            <div class="sale-sc-box">
+              <label for="sales-scale">매출규모</label>
+              <select name="sales" id="sales-scale">
+                <option value="">전체</option>
+                <option value="">10억미만</option>
+                <option value="">10억이상~50억미만</option>
+                <option value="">50억이상~100억미만</option>
+                <option value="">100억이상~300억미만</option>
+                <option value="">300억이상~500억미만</option>
+                <option value="">500억이상~1000억미만</option>
+                <option value="">1000억 이상</option>
+              </select>
+            </div>
+            <div>
+              <select name="array">
+                <option value="">정렬</option>
+                <option value="">구축건수</option>
+                <option value="">우수구축</option>
+                <option value="">최신 순</option>
+                <option value="">지역별</option>
+                <option value="">솔루션</option>
+                <option value="">업종별</option>
+              </select>
+            </div>
+            <div class="list-li-btn _flx">
+              <button type="button" class="list-li active">
+                <i class="fa-solid fa-list"></i>
+              </button>
+              <button type="button" class="list-cd">
+                <i class="fa-solid fa-border-all"></i>
+              </button>
+            </div>
+          </div>  
+        </div>
+
+        <!-- List 스타일 -->
+        <div class="section-body col-span-12 mt-4">
+          <div class="ent-box">
+            <div class="ent-tit">
+              <a href="#">(주)신생공급</a>
+            </div>
+            <div class="con-box">
+              <div class="bg-col">구축건수</div>
+              <div class="value">10건</div>
+              <div class="bg-col">특화업종</div>
+              <div class="value">식품</div>
+              <div class="bg-col">소재지</div>
+              <div class="value">서울</div>
+              <div class="bg-col">종사자규모</div>
+              <div class="value">15명</div>
+              <div class="bg-col">매출규모</div>
+              <div class="value">10억(2020)</div>
+              <div class="bg-col solution-tit">제공솔루션</div>
+              <div class="value solution">ERP, MES, SCM, AI, 빅데이터</div>
+              <div class="bg-col">만족도</div>
+              <div class="value">85점</div>
+              <div class="etc"></div>
+            </div>
+          </div>
+          <div class="ent-box">
+            <div class="ent-tit">
+              <a href="#">우수공급(주)</a>
+            </div>
+            <div class="con-box">
+              <div class="bg-col">구축건수</div>
+              <div class="value">5건</div>
+              <div class="bg-col">특화업종</div>
+              <div class="value">자동차</div>
+              <div class="bg-col">소재지</div>
+              <div class="value">경남 창원</div>
+              <div class="bg-col">종사자규모</div>
+              <div class="value">30명</div>
+              <div class="bg-col">매출규모</div>
+              <div class="value">5억(2021)</div>
+              <div class="bg-col solution-tit">제공솔루션</div>
+              <div class="value solution">ERP, MES</div>
+              <div class="bg-col">만족도</div>
+              <div class="value">95점</div>
+              <div class="etc"></div>
+            </div>
+          </div>
+          <div class="ent-box">
+            <div class="ent-tit">
+              <a href="#">(주)추진기업</a>
+            </div>
+            <div class="con-box">
+              <div class="bg-col">구축건수</div>
+              <div class="value">100건</div>
+              <div class="bg-col">특화업종</div>
+              <div class="value">항공</div>
+              <div class="bg-col">소재지</div>
+              <div class="value">세종</div>
+              <div class="bg-col">종사자규모</div>
+              <div class="value">150명</div>
+              <div class="bg-col">매출규모</div>
+              <div class="value">500억(2020)</div>
+              <div class="bg-col solution-tit">제공솔루션</div>
+              <div class="value solution">ERP, MES, AI, 빅데이터</div>
+              <div class="bg-col">만족도</div>
+              <div class="value">95점</div>
+              <div class="etc">* 예비공급기업</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 스타일 -->
+        <div class="card-style-wrap col-span-12 mt-4">
+          <div class="section-body-card">
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">(주)신생공급</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">10건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">식품</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">서울</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">85점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc">* 예비공급기업</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES, SCM, AI, 빅데이터</div>
+                </div>
+              </div>
+            </div>
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">우수공급(주)</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">5건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">자동차</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">경남 창원</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">95점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc"></div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES</div>
+                </div>
+              </div>
+            </div>
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">(주)추진기업</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">100건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">항공</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">세종</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">95점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc">* 예비공급기업</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES, AI, 빅데이터</div>
+                </div>
+              </div>
+            </div>
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">(주)유클</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">9999건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">IT</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">포항</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">100점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc">* 우수사례 구축기업</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES, SCM, AI, 빅데이터</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">(주)신생공급</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">10건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">식품</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">서울</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">85점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc">* 예비공급기업</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES, SCM, AI, 빅데이터</div>
+                </div>
+              </div>
+            </div>
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">우수공급(주)</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">5건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">자동차</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">경남 창원</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">95점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc"></div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES</div>
+                </div>
+              </div>
+            </div>
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">(주)추진기업</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">100건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">항공</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">세종</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">95점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc">* 예비공급기업</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES, AI, 빅데이터</div>
+                </div>
+              </div>
+            </div>
+            <div class="ent-box-card">
+              <div class="ent-tit">
+                <a href="#">(주)유클</a>
+              </div>
+              <div class="con-box">
+                <div class="con-item">
+                  <div class="bg-col">구축건수</div>
+                  <div class="value">9999건</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">특화업종</div>
+                  <div class="value">IT</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">소재지</div>
+                  <div class="value">포항</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col">만족도</div>
+                  <div class="value">100점</div>
+                </div>
+                <div class="con-item etc-card">
+                  <div class="etc">* 우수사례 구축기업</div>
+                </div>
+                <div class="con-item">
+                  <div class="bg-col solution-tit-card">제공솔루션</div>
+                  <div class="value solution-card">ERP, MES, SCM, AI, 빅데이터</div>
+                </div>
+              </div>
+            </div>
+          </div>      <!-- section-body-card end -->
+        </div>
+
+        <div class="pagenate col-span-12 mt-24">
+          <a href="#" class="btn_first"><span class="blind">첫번째로 이동</span></a>
+          <a href="#" class="btn_prev"><span class="blind">이전</span></a>
+          <span class="num">
+            <strong class="on">1</strong>
+            <a href="#" title="2 페이지">2</a>
+            <a href="#" title="3 페이지">3</a>
+            <a href="#" title="4 페이지">4</a>
+            <a href="#" title="5 페이지">5</a>
+            <a href="#" title="6 페이지">6</a>
+            <a href="#" title="7 페이지">7</a>
+            <a href="#" title="8 페이지">8</a>
+            <a href="#" title="9 페이지">9</a>
+            <a href="#" title="10 페이지">10</a>
+          </span>
+          <a href="#" class="btn_next"><span class="blind">다음</span></a>
+          <a href="#" class="btn_last"><span class="blind">마지막</span></a>
+        </div>
+
+      </div>      <!-- inner-task end -->
+
+
+    </div>    <!-- visual end -->
+
+
+  </div>    <!-- 전체 wrap end -->
+  
+</body>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for(i=0; i<acc.length; i++){
+  acc[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    // console.log(panel.style.maxHeight);
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    }else{
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+//checkbox max
+var checkboxes_1 = $('.check-box-type > input[type="checkbox"].group1');
+checkboxes_1.change(function(){
+  var max = 3;
+  var current = checkboxes_1.filter(':checked').length;
+  checkboxes_1.filter(':not(:checked)').prop('disabled', current >= max);
+});
+var checkboxes_2 = $('.check-box-type > input[type="checkbox"].group2');
+checkboxes_2.change(function(){
+  var max = 5;
+  var current = checkboxes_2.filter(':checked').length;
+  checkboxes_2.filter(':not(:checked)').prop('disabled', current >= max);
+});
+
+//tag delete
+$(document).on("click", ".tag", function(e){
+  $(this).remove();
+});
+
+//List-Card change
+var btnList = document.querySelector(".list-li");
+var btnCard = document.querySelector(".list-cd");
+var divList = document.querySelector(".section-body");
+var divCard = document.querySelector(".card-style-wrap");
+btnCard.onclick = function(){
+  if(divList.style.display !== 'none'){
+    divList.style.display = 'none';
+    divCard.style.display = 'block';
+    btnList.classList.remove('active');
+    btnCard.classList.add('active');
+  }
+}
+btnList.onclick = function(){
+  if(divCard.style.display !== 'none'){
+    divCard.style.display = 'none';
+    divList.style.display = 'block';
+    btnCard.classList.remove('active');
+    btnList.classList.add('active');
+  }
+}
+
+
+</script>
+</html>
