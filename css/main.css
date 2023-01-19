@@ -1104,7 +1104,7 @@ table .first{
 
 /* 2022-12-20 추가분 */
 /* ========================================= */
-/* 아코디언 메뉴 */
+/* accordion menu */
 /* ========================================= */
 .visual .inner-task{
   max-width: 970px;
@@ -1432,20 +1432,24 @@ table .first{
   color: #498ac1;
   font-family: "NotoSansKR-500";
   margin-left: 8px;
-  text-align: center;
   display : flex;
-  justify-content : center;
   align-items : center;
 }
 .value {
   border: 1px solid #d2e0eb;
   padding: 3px 3px;
-  text-align: center;
   display : flex;
-  justify-content : center;
   align-items : center;
 }
-.solution {grid-column: span 5 / span 5;}
+/* 말줄임 추가 */
+.text-ellipsis{
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.solution{grid-column: span 7 / span 7;}
+.industry{grid-column: span 9 / span 9;}
 .etc{grid-column: span 2 / span 2; 
   margin-left: 8px; 
   padding: 4px 0 0;
@@ -1456,6 +1460,9 @@ table .first{
 @media (max-width: 744px) {
   .con-box{grid-template-columns: repeat(6, minmax(0, 1fr)) !important;}
   .con-box .solution-tit{grid-row: 3;}
+  .con-box .industry-tit{grid-row: 4;}
+  .con-box .etc{grid-row: 2; grid-column: 5 / span 2; }
+  .solution, .industry{grid-column: span 5 / span 5;}
 }
 @media (max-width: 590px) {
   .ent-box{grid-template-columns: repeat(5, minmax(0, 1fr));}
@@ -1503,8 +1510,11 @@ table .first{
 }
 .section-body-card .solution-card,
 .section-body-card .solution-tit-card,
+.section-body-card .industry-card,
+.section-body-card .industry-tit-card,
 .section-body-card .etc-card{grid-column: span 2 / span 2;}
-.section-body-card .solution-tit-card{border: 0; border-bottom: 1px solid #d2e0eb;}
+.section-body-card .solution-tit-card,
+.section-body-card .industry-tit-card{border: 0; border-bottom: 1px solid #d2e0eb;}
 .section-body-card .etc-card{border: 0; border-bottom: 1px solid #d2e0eb; min-height: 31px;}
 .section-body-card .etc{padding: 6px; min-height: 31px;}
 
